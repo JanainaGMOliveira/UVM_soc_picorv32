@@ -43,7 +43,7 @@ TODO: add description of each component
 
 ---
 
-## ✅ Verification Results
+## Verification Results
 
 // TODO: add results and needed tests
 
@@ -60,6 +60,6 @@ TODO: add description of each component
 ## 🔗 Related Repository
 
 The DUT (SoC source files) is maintained separately:  
-👉 [soc_iot_picorv32_axi](https://github.com/danilolimadev/soc_iot_picorv32_axi)
+[soc_iot_picorv32_axi](https://github.com/danilolimadev/soc_iot_picorv32_axi)
 
 ---

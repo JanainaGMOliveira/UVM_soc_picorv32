@@ -305,11 +305,9 @@ class spi_monitor extends uvm_monitor;
 
 
     task monitor_spi(output bit [SPI_DATA_BITS-1:0] data_byte_mosi, data_byte_miso);
-
         wait_for_start();
         decode_byte(data_byte_mosi, data_byte_miso);
         wait_for_stop();
-
     endtask
 
     task decode_byte(output bit [SPI_DATA_BITS-1:0] data_byte_mosi, data_byte_miso);
@@ -321,9 +319,6 @@ class spi_monitor extends uvm_monitor;
             @(negedge bfm.spi_sck); // pega cada bit restante na subida de sck
             begin
                 data_byte_mosi[i] = bfm.spi_mosi;
-            end
-            @(posedge bfm.spi_sck); 
-            begin
                 data_byte_miso[i] = bfm.spi_miso;
             end
         end
